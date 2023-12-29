@@ -96,3 +96,71 @@ def lambda_handler(event, context):
    print('Resizing image complete')
 
 ```
+- ### To deploy your Lambda function, choose 
+``````
+Deploy
+``````
+
+Choose the 
+``````
+Configuration tab
+``````
+, and then choose 
+``````
+General configuration
+`````` 
+Choose 
+``````
+Edit
+``````
+
+In the Memory field, 
+``````
+enter 512 MB
+``````
+Then chose
+``````
+Save
+``````
+
+At the top of these instructions, choose 
+``````
+Details
+``````
+ Next to AWS, choose 
+ ``````
+ Show
+ ``````
+  Copy the value next to ResizedBucketName. Use it as the value in step 25.
+
+In the AWS Management Console, 
+``````
+choose environment variables
+``````
+
+
+Choose 
+``````
+Edit
+``````
+
+
+Choose 
+``````
+Add environment variable
+``````
+
+Enter the following values:
+``````
+  Key: RESIZED_BUCKET
+  Value: Enter the value that you retrieved in 
+  step 21
+  ``````
+
+Choose 
+``````
+Save
+``````
+You have created a Lambda function.👍😄 
+
+___
